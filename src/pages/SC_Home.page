@@ -1,0 +1,11 @@
+<apex:page controller="SC_HomeController" showHeader="false" sidebar="false" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" >
+  <apex:composition template="{!$Site.Template}">
+    <apex:define name="pagetitle">{!$Site.MasterLabel} Home</apex:define>
+    <apex:define name="body" > 
+        
+
+    	<h1>Title = {!HomePageConfig.Home_Page_Title__c}</h1>
+            
+    </apex:define>
+  </apex:composition>
+</apex:page>

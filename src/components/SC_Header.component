@@ -1,0 +1,31 @@
+<apex:component >
+<header id="header" class="header">
+    <style>
+      <c:SC_CSSMain />
+    </style>
+    <div id="header-top">
+        <div class="header-left">
+            <div class="logo-container">
+                <a href="{$Page.SC_Home}">
+                    <apex:image styleClass="heeaderIcon" value="https://c.na34.content.force.com/servlet/servlet.FileDownload?file=015610000009PZ8"/> 
+                </a>
+            </div>
+            <div class="header-title">
+            	 <span class="logo-text">{!$Site.MasterLabel}</span>
+            </div>
+        </div>
+        <div class="header-right"></div>
+    </div>
+    <div id="navbar">
+    	<div class="navbar-center">
+	    	<div  class="nav-right">
+	                <ul class="nav-horizontal">
+	                    <li><a class="is-active" href="{!$Page.SC_Home}">Home</a></li>
+	                    <li><a class="" href="{!$Site.Prefix}/_ui/core/chatter/ui/ChatterPage">Chatter</a></li>
+	                    <li><a class="" href="">My Profile</a></li>
+	                </ul>
+	        </div>
+        </div>
+    </div>
+</header>  
+</apex:component>

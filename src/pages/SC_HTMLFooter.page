@@ -1,0 +1,3 @@
+<apex:page applyHtmlTag="false" applyBodyTag="false" showHeader="false" standardStylesheets="false">
+	<c:SC_Footer />
+</apex:page>
