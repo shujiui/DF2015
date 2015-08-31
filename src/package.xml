@@ -2,6 +2,7 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>SC_CSSMainController</members>
+        <members>SC_HeaderController</members>
         <members>SC_HomeController</members>
         <members>SC_Utils</members>
         <name>ApexClass</name>
@@ -34,5 +35,5 @@
         <members>SC_Community</members>
         <name>StaticResource</name>
     </types>
-    <version>31.0</version>
+    <version>33.0</version>
 </Package>

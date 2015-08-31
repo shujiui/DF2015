@@ -2,10 +2,16 @@
   <apex:composition template="{!$Site.Template}">
     <apex:define name="pagetitle">{!$Site.MasterLabel} Home</apex:define>
     <apex:define name="body" > 
-        
-
-    	<h1>Title = {!HomePageConfig.Home_Page_Title__c}</h1>
-            
+    
+    <div id="bodyTitleAndDescription">
+    	<div id="bodyTitle"> 
+    		<h2>{!HomePageConfig.Home_Page_Title__c} </h2>
+    	</div>
+    	<div id="bodyDescription">
+    		<apex:outputField value="{!HomePageConfig.Home_Page_Description__c}"/> 
+    	</div>
+    </div>        
+    
     </apex:define>
   </apex:composition>
 </apex:page>

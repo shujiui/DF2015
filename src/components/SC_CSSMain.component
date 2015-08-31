@@ -4593,5 +4593,21 @@ button.close {
 #navbar .nav-horizontal li a.is-active {
   border-bottom: 3px solid {!BrandPrimaryColor};
 }
+#bodyTitleAndDescription {
+  margin-top: 50px;
+}
+#bodyTitleAndDescription #bodyTitle h2 {
+  color: {!BrandPrimaryTextColor};
+  padding-left: 33%;
+}
+#bodyTitleAndDescription #bodyDescription {
+  width: 100%;
+  padding-left: 33%;
+  font-size: 20px;
+  color: {!BrandSecondaryTextColor};
+}
+#bodyTitleAndDescription #bodyDescription table {
+  display: inline-block;
+}
 
 </apex:component>

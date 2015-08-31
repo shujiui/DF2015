@@ -1,4 +1,4 @@
-<apex:component >
+<apex:component controller="SC_HeaderController" >
 <header id="header" class="header">
     <style>
       <c:SC_CSSMain />
@@ -7,7 +7,7 @@
         <div class="header-left">
             <div class="logo-container">
                 <a href="{$Page.SC_Home}">
-                    <apex:image styleClass="heeaderIcon" value="https://c.na34.content.force.com/servlet/servlet.FileDownload?file=015610000009PZ8"/> 
+                    <apex:image styleClass="heeaderIcon" value="{!PageConfig.Header_Logo_URL__c}"/> 
                 </a>
             </div>
             <div class="header-title">
@@ -20,9 +20,15 @@
     	<div class="navbar-center">
 	    	<div  class="nav-right">
 	                <ul class="nav-horizontal">
-	                    <li><a class="is-active" href="{!$Page.SC_Home}">Home</a></li>
-	                    <li><a class="" href="{!$Site.Prefix}/_ui/core/chatter/ui/ChatterPage">Chatter</a></li>
-	                    <li><a class="" href="">My Profile</a></li>
+	                    <li>
+                            <a class="is-active" href="{!PageConfig.Header_Nav_URL_1__c}">{!PageConfig.Header_Nav_Label_1__c}</a>
+                        </li>
+	                    <li>
+                            <a class="" href="{!PageConfig.Header_Nav_URL_2__c}">{!PageConfig.Header_Nav_Label_2__c}</a>
+                        </li>
+	                    <li>
+                            <a class="" href="{!PageConfig.Header_Nav_URL_3__c}">{!PageConfig.Header_Nav_Label_3__c}</a>
+                        </li>
 	                </ul>
 	        </div>
         </div>

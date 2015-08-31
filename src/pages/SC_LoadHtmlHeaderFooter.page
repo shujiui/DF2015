@@ -5,5 +5,7 @@ $j(".footer-wrap" ).load( "{!$Page.SC_HTMLFooter} #footer" );
 $j(".header-wrap" ).load( "{!$Page.SC_HTMLHeader} #header" ,function(){
 	$j("div[role='banner']").remove();
 	$j(".zen-bodyZen").css("border-top", "0px");
+    $j(".bPageHeader").remove();
+    $j(".bodyDiv").css("border-top", "0px");
 });
 </apex:page>
