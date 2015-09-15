@@ -15,7 +15,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <!--<link rel="apple-touch-icon" sizes="152x152" href="{!FaviconURL}" />-->
 
     <apex:includeScript value="https://use.typekit.net/jff5neq.js"/>
     <script type="text/javascript">
@@ -25,15 +24,13 @@
     <script src="{!URLFOR($Resource.SC_Community, 'script/respond.min.js')}"></script>
     <script src="{!URLFOR($Resource.SC_Community, 'script/modernizr.min.js')}"></script>
     <script src="{!URLFOR($Resource.SC_Community, 'script/jquery-1.10.2.min.js')}"></script>
-    <!--<script src="{!URLFOR($Resource.SC_Assets, 'scripts/bootstrap.min.js')}"></script>-->
-    <!--<script src="{!URLFOR($Resource.SC_Assets, 'scripts/validator.js')}"></script>-->
-    <!--<script src="{!URLFOR($Resource.SC_Assets, 'scripts/all.min.js')}"></script>-->
 
     <apex:stylesheet value="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 
     <style>
       <c:SC_CSSMain />
     </style>
+
   </head>
 
   <body>
@@ -47,7 +44,7 @@
 
     <!--footer-->
     <apex:insert name="footer">
-       <c:SC_Footer /> 
+     <!--   <c:SC_Footer />  -->
     </apex:insert>
   </body>
 

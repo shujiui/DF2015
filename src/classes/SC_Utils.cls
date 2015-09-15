@@ -19,7 +19,8 @@ public with sharing class SC_Utils {
 																Header_Nav_URL_1__c,	
 																Header_Nav_URL_2__c,	
 																Header_Nav_URL_3__c,
-																Header_Logo_URL__c
+																Header_Logo_URL__c,
+																Banner_Image_URL__c
 														from 	SC_Community_Configuration__c
 														where RecordType.Name = :recordType and Name = :configName limit 1];
 		if(listOfHC.size()>0){

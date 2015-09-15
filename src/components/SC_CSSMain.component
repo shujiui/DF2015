@@ -4609,5 +4609,14 @@ button.close {
 #bodyTitleAndDescription #bodyDescription table {
   display: inline-block;
 }
+#bannerImage {
+  background-image: url({!BannerImageURL});
+  background-repeat: no-repeat;
+  min-height: 350px;
+  background-size: cover;
+  background-position-y: -40px;
+  position: relative;
+  overflow: hidden;
+}
 
 </apex:component>

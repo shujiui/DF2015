@@ -1,5 +1,5 @@
 <apex:component controller="SC_HeaderController" >
-<header id="header" class="header">
+ <header id="header" class="header">
     <style>
       <c:SC_CSSMain />
     </style>
@@ -11,27 +11,29 @@
                 </a>
             </div>
             <div class="header-title">
-            	 <span class="logo-text">{!$Site.MasterLabel}</span>
+                 <span class="logo-text">{!$Site.MasterLabel}</span>
             </div>
         </div>
         <div class="header-right"></div>
     </div>
     <div id="navbar">
-    	<div class="navbar-center">
-	    	<div  class="nav-right">
-	                <ul class="nav-horizontal">
-	                    <li>
-                            <a class="is-active" href="{!PageConfig.Header_Nav_URL_1__c}">{!PageConfig.Header_Nav_Label_1__c}</a>
+        <div class="navbar-center">
+                 <div  class="nav-right">
+                    <ul class="nav-horizontal">
+                        <li>
+
+                            <a class="{!IF(CONTAINS($CurrentPage.URL, PageConfig.Header_Nav_URL_1__c),  'is-active', '')}" href="{!PageConfig.Header_Nav_URL_1__c}">{!PageConfig.Header_Nav_Label_1__c}</a>
                         </li>
-	                    <li>
-                            <a class="" href="{!PageConfig.Header_Nav_URL_2__c}">{!PageConfig.Header_Nav_Label_2__c}</a>
+                        <li>
+                            <a class="{!IF(CONTAINS($CurrentPage.URL, PageConfig.Header_Nav_Label_2__c),  'is-active', '')}" href="{!PageConfig.Header_Nav_URL_2__c}">{!PageConfig.Header_Nav_Label_2__c}</a>
                         </li>
-	                    <li>
-                            <a class="" href="{!PageConfig.Header_Nav_URL_3__c}">{!PageConfig.Header_Nav_Label_3__c}</a>
+                        <li>
+                            <a class="{!IF(CONTAINS($CurrentPage.URL, PageConfig.Header_Nav_URL_3__c),  'is-active', '')}" href="{!PageConfig.Header_Nav_URL_3__c}">{!PageConfig.Header_Nav_Label_3__c}</a>
                         </li>
-	                </ul>
-	        </div>
+                    </ul>
+            </div>
         </div>
     </div>
-</header>  
+    </header>
+
 </apex:component>
